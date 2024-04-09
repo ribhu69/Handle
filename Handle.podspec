@@ -15,20 +15,15 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "Handle"
-  spec.version      = "0.0.1"
-  spec.summary      = "A short description of Handle."
-
+  
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = <<-DESC
-                   DESC
 
-  spec.homepage     = "http://EXAMPLE/Handle"
-  # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
+
+  
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -38,8 +33,24 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "MIT (example)"
-  # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  spec.name         = "Handle"
+  spec.version      = "1.0.0"
+  spec.summary      = "A short description of Handle."
+
+  spec.description  = <<-DESC
+  This is a sample library for testing purpose only.
+                   DESC
+
+  spec.homepage     = "https://github.com/ribhu69/Handle.git"
+  spec.license          = { :type => 'MIT', :file => 'LICENSE' }
+  spec.author             = { "Arkaprava Ghosh" => "arkapravaghosh99@gmail.com" }
+  spec.platform     = :ios
+  spec.platform     = :ios, "5.0"
+  spec.ios.deployment_target = '14.0'
+  spec.source       = { :git => "https://github.com/ribhu69/Handle.git", :tag => spec.version.to_s }
+  spec.source_files  = "Sources/Handle/**/*"
+  spec.exclude_files = "Classes/Exclude"
+
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -52,7 +63,6 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  spec.author             = { "Arkaprava Ghosh" => "arkapravaghosh99@gmail.com" }
   # Or just: spec.author    = "Arkaprava Ghosh"
   # spec.authors            = { "Arkaprava Ghosh" => "arkaprava.ag@zohocorp.com" }
   # spec.social_media_url   = "https://twitter.com/Arkaprava Ghosh"
@@ -63,8 +73,7 @@ Pod::Spec.new do |spec|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  spec.platform     = :ios
-  spec.platform     = :ios, "5.0"
+ 
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
@@ -80,7 +89,6 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/ribhu69/Handle.git", :tag => spec.version.to_s }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,8 +99,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
+ 
 
   # spec.public_header_files = "Classes/**/*.h"
 
