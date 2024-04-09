@@ -52,7 +52,7 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  spec.author             = { "Arkaprava Ghosh" => "arkaprava.ag@zohocorp.com" }
+  spec.author             = { "Arkaprava Ghosh" => "arkapravaghosh99@gmail.com" }
   # Or just: spec.author    = "Arkaprava Ghosh"
   # spec.authors            = { "Arkaprava Ghosh" => "arkaprava.ag@zohocorp.com" }
   # spec.social_media_url   = "https://twitter.com/Arkaprava Ghosh"
@@ -63,8 +63,8 @@ Pod::Spec.new do |spec|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # spec.platform     = :ios
-  # spec.platform     = :ios, "5.0"
+  spec.platform     = :ios
+  spec.platform     = :ios, "5.0"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
@@ -80,7 +80,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "http://EXAMPLE/Handle.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/ribhu69/Handle.git", :tag => spec.version.to_s }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
