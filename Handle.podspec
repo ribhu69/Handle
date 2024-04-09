@@ -18,7 +18,7 @@ Pod::Spec.new do |spec|
   # spec.source       = { :git => "https://github.com/ribhu69/Handle.git", :tag => spec.version.to_s }
   spec.source       = { :git => "https://github.com/ribhu69/Handle.git", :tag => spec.version.to_s }
   spec.source_files  = "Sources/Handle/**/*.{swift}"
-  spec.resource_bundles = { 'Media' => ["Sources/Handle/**/*.{xcassets}"] }
+  spec.resource_bundles = { 'Media' => ["Sources/Handle/**/*.{xcassets, json}"] }
 
   # spec.resources_bundle = 'Sources/Handle/Media/*.{xcassets}'
 
