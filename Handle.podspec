@@ -13,16 +13,13 @@ Pod::Spec.new do |spec|
   spec.homepage     = "https://github.com/ribhu69/Handle.git"
   spec.license          = { :type => 'MIT', :file => 'LICENSE' }
   spec.author             = { "Arkaprava Ghosh" => "arkapravaghosh99@gmail.com" }
-  spec.platform     = :ios
   spec.platform     = :ios, "5.0"
   spec.ios.deployment_target = '14.0'
   # spec.source       = { :git => "https://github.com/ribhu69/Handle.git", :tag => spec.version.to_s }
   spec.source       = { :git => "https://github.com/ribhu69/Handle.git", :tag => spec.version.to_s }
+  spec.source_files  = "Sources/Handle/**/*.{swift}"
+  spec.resource_bundles = { 'Media' => ["Sources/Handle/**/*.{xcassets}"] }
 
-  spec.source_files  = "Sources/Handle/**/*"
-  spec.resource_bundles = {
-    'Media' => ["Sources/Handle/Resources/*.{xcassets}"]
-  }
   # spec.resources_bundle = 'Sources/Handle/Media/*.{xcassets}'
 
 
