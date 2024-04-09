@@ -21,7 +21,7 @@ Pod::Spec.new do |spec|
 
   spec.source_files  = "Sources/Handle/**/*"
   spec.resource_bundles = {
-    'Handle' => ['Sources/Handle/Media/*.{xcassets}']
+    'Media' => ["Sources/Handle/Media*.{xcassets}"]
   }
   # spec.resources_bundle = 'Sources/Handle/Media/*.{xcassets}'
 
