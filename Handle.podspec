@@ -17,8 +17,8 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = '14.0'
   # spec.source       = { :git => "https://github.com/ribhu69/Handle.git", :tag => spec.version.to_s }
   spec.source       = { :git => "https://github.com/ribhu69/Handle.git", :tag => spec.version.to_s }
-  spec.source_files  = "Sources/Handle/**/*.{swift}"
-  spec.resource_bundles = { 'Media' => ["Sources/Handle/**/*.{xcassets, json}"] }
+  spec.source_files  = "Sources/**/*.{swift}"
+  spec.resource_bundles = { 'Handle' => ["Sources/**/*.{xcassets,strings,stringsdict}"] }
 
   # spec.resources_bundle = 'Sources/Handle/Media/*.{xcassets}'
 
